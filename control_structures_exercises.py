@@ -276,3 +276,31 @@ while True:
 
 
 # 6.
+
+bookshelf = [
+    {
+        'title':'title1',
+        'author': 'author1',
+        'genre': 'genre1'
+    },
+    {
+        'title':'title2',
+        'author': 'author1',
+        'genre': 'genre2'
+    },
+    {
+        'title':'title3',
+        'author': 'author2',
+        'genre': 'genre2'
+    },
+    {
+        'title':'title4',
+        'author': 'author3',
+        'genre': 'genre2'
+    }
+]
+
+for book in bookshelf:
+    print('What are you looking at?')
+    [print(key, ': ', book[key]) for key in book]
+    print('------')
