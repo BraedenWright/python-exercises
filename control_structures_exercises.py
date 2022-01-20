@@ -281,22 +281,22 @@ bookshelf = [
     {
         'title':'title1',
         'author': 'author1',
-        'genre': 'genre1'
+        'genre': 'Sci-Fi'
     },
     {
         'title':'title2',
         'author': 'author1',
-        'genre': 'genre2'
+        'genre': 'Horror'
     },
     {
         'title':'title3',
         'author': 'author2',
-        'genre': 'genre2'
+        'genre': 'Horror'
     },
     {
         'title':'title4',
         'author': 'author3',
-        'genre': 'genre2'
+        'genre': 'Fantasy'
     }
 ]
 
@@ -304,3 +304,16 @@ for book in bookshelf:
     print('What are you looking at?')
     [print(key, ': ', book[key]) for key in book]
     print('------')
+
+
+what_genre = input('What genre are you feeling?')
+
+matches = []
+for book in bookshelf:
+    if book ['genre'].lower() == what_genre.lower():
+        matches.append(book['title'])
+if matches == []:
+    print('nothing to see here')
+else:
+    print(f'Here\'s what we got for {what_genre}')
+    [print(match) for match in matches]
