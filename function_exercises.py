@@ -178,3 +178,13 @@ def cumulative_sum(the_list):
 
 the_list = [8, 6, 7, 5, 3, 0, 9]
 cumulative_sum(the_list)
+
+# alternative shown in class review
+
+def cumulative_sum(the_list):
+    output = []
+    for i, num in enumerate(the_list):
+        sum_so_far = sum(the_list[:i + 1])
+
+        output.append(sum_so_far)
+    return output
