@@ -188,3 +188,8 @@ def cumulative_sum(the_list):
 
         output.append(sum_so_far)
     return output
+
+
+# B-B-Bonus!!!
+
+def twelveto24()
