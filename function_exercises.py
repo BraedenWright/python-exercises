@@ -192,4 +192,19 @@ def cumulative_sum(the_list):
 
 # B-B-Bonus!!!
 
-def twelveto24()
+# change data to intergers
+#account for the AM or PM in military time
+
+def twelveto_int(the_time):
+    if 'am' in the_time:
+        starting_time = 0
+    else:
+        starting_time = 12
+
+        
+    the_time = the_time[0:-2]
+    the_time = int(the_time)
+
+
+
+twelveto_int('10:45pm')
