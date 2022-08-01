@@ -23,7 +23,7 @@ def is_vowel(string):
 
     return string.lower() in ['a','e','i','o', 'u']
 
-#  is_vowel('a')
+is_vowel('a')
 
 
 # 3. 
@@ -34,7 +34,7 @@ def is_consonant(string):
     #I can use my last function to save some time
     return not is_vowel(string) 
 
-#  is_consonant('g')
+is_consonant('g')
 
 
 # 4. 
